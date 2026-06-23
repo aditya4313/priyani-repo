@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyani Kumari | Portfolio</title>
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Portfolio of Priyani Kumari, a Computer Science Undergraduate student specializing in Web Development, React, and Software Engineering. View projects, skills, and experience.">
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Background Canvas for Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="glass-nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="code-bracket">&lt;</span>Priyani<span class="code-bracket">.dev /&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="badge-glowing">Available for Internships</div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Priyani Kumari</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I am a <span id="typing-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-desc">
+                    Computer Science undergraduate student passionate about building elegant, interactive web experiences and solving complex problems with efficient algorithms.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="Priyani.resume.pdf" target="_blank" class="btn btn-outline">
+                        <i class="fa-solid fa-file-pdf"></i> View CV
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:1304priyani@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+919667780277" class="social-icon" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="blob-wrapper">
+                    <div class="glowing-blob"></div>
+                    <div class="avatar-card glass-card">
+                        <div class="avatar-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="avatar-code">
+                            <span class="code-line pink">const</span> <span class="code-line blue">developer</span> = {<br>
+                            &nbsp;&nbsp;<span class="code-line yellow">name</span>: <span class="code-line green">'Priyani Kumari'</span>,<br>
+                            &nbsp;&nbsp;<span class="code-line yellow">role</span>: <span class="code-line green">'CS Undergrad'</span>,<br>
+                            &nbsp;&nbsp;<span class="code-line yellow">college</span>: <span class="code-line green">'IITM College of Eng.'</span>,<br>
+                            &nbsp;&nbsp;<span class="code-line yellow">passions</span>: [<span class="code-line green">'Web Dev'</span>, <span class="code-line green">'DSA'</span>, <span class="code-line green">'AI'</span>],<br>
+                            &nbsp;&nbsp;<span class="code-line yellow">skills</span>: [<span class="code-line green">'React'</span>, <span class="code-line green">'JS'</span>, <span class="code-line green">'Node'</span>, <span class="code-line green">'C++'</span>]<br>
+                            };
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="about-section container">
+            <h2 class="section-title"><span class="gradient-text">About & Education</span></h2>
+            <div class="about-grid">
+                <div class="about-info glass-card">
+                    <div class="card-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <h3>My Story</h3>
+                    <p>
+                        I am currently pursuing a **Bachelor of Technology in Computer Science and Engineering** (2023-2027) at IITM College of Engineering. I possess hands-on experience in modern web design and software engineering, and enjoy translating complex requirements into simple, beautiful, and interactive applications.
+                    </p>
+                    <p>
+                        With a solid academic foundation (CGPA 7.6) and a continuous drive for problem-solving, I regularly practice Data Structures and Algorithms to strengthen logical thinking. My goal is to leverage my technical skills to build impact-driven web applications and learn state-of-the-art tech.
+                    </p>
+                </div>
+                
+                <div class="about-timeline glass-card">
+                    <h3>Academic Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2023 - 2027</div>
+                            <div class="timeline-content">
+                                <h4>B.Tech in Computer Science & Engineering</h4>
+                                <p class="timeline-inst">IITM College of Engineering</p>
+                                <span class="academic-badge">CGPA: 7.6</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2022</div>
+                            <div class="timeline-content">
+                                <h4>XIIth Grade (Senior Secondary)</h4>
+                                <p class="timeline-inst">Adarsh Jain Dharmic School</p>
+                                <span class="academic-badge">Score: 79%</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2020</div>
+                            <div class="timeline-content">
+                                <h4>Xth Grade (Secondary School)</h4>
+                                <p class="timeline-inst">Jinvani Bharti Public School</p>
+                                <span class="academic-badge">Score: 80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section container">
+            <h2 class="section-title"><span class="gradient-text">Skills & Technologies</span></h2>
+            <p class="section-subtitle">A curated map of my technical skillset and knowledge areas</p>
+            <div class="skills-grid">
+                <!-- Skill Category: Programming -->
+                <div class="skill-category glass-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>C / C++</span>
+                            <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQL</span>
+                            <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category: Development -->
+                <div class="skill-category glass-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>Development</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>React.js</span>
+                            <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>HTML5 / CSS3</span>
+                            <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Node.js / Express.js</span>
+                            <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MongoDB</span>
+                            <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category: CS Fundamentals -->
+                <div class="skill-category glass-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>CS Fundamentals & Tools</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Data Structures & Alg (DSA)</span>
+                            <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>DBMS / Operating Systems</span>
+                            <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Computer Networks (CN)</span>
+                            <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Git, GitHub & VS Code</span>
+                            <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Machine Learning / GenAI</span>
+                            <div class="progress-bar"><div class="progress" style="width: 65%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section container">
+            <h2 class="section-title"><span class="gradient-text">Featured Projects</span></h2>
+            <p class="section-subtitle">Real-world applications built to solve problems and practice core programming paradigms</p>
+            <div class="projects-grid">
+                <!-- Project: AI Trip Planner -->
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder trip-planner-bg">
+                            <i class="fa-solid fa-plane-departure"></i>
+                        </div>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>AI Services</span>
+                            <span>Maps API</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Trip Planner</h3>
+                        <p>
+                            Built an AI-powered travel planning application that automatically structures personalized itineraries, lodging/hotel recommendations, and day-wise details based on user preferences. Integrated real-time database capabilities and map location services.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
+                            <a href="#" class="project-link demo-trigger" data-project="trip"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: React Food App -->
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder food-app-bg">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Context API</span>
+                            <span>CSS Grid</span>
+                            <span>State Mgmt</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>React Food App</h3>
+                        <p>
+                            Developed a responsive, user-friendly food ordering web application with dynamic menu sorting, cart state management, and custom reusable components. Used Context API to distribute app state seamlessly and created an optimized, lag-free UI/UX.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
+                            <a href="#" class="project-link demo-trigger" data-project="food"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: Pacman Game (PLAYABLE) -->
+                <div class="project-card glass-card highlighted-card">
+                    <div class="project-img-wrapper">
+                        <div class="project-img-placeholder pacman-bg">
+                            <div class="pacman-eye-animation">
+                                <div class="pacman-shape"></div>
+                                <div class="ghost-shape pink-ghost"></div>
+                            </div>
+                        </div>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML5 Canvas</span>
+                            <span>Game Dev</span>
+                            <span>CSS Animations</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="badge-accent">Interactive Demo Available</div>
+                        <h3>Pacman Browser Game</h3>
+                        <p>
+                            Developed a browser-based arcade Pacman game from scratch. Features collision detection, keyboard/swipe input tracking, autonomous ghost movement logic, score & life counts, and dynamic stage resets. Playable directly in this page!
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fa-brands fa-github"></i> Source</a>
+                            <button class="btn btn-accent btn-sm play-pacman-btn" id="open-game-btn">
+                                <i class="fa-solid fa-gamepad"></i> Play Game Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience, Achievements & Internships Section -->
+        <section id="experience" class="exp-ach-section container">
+            <div class="section-split">
+                <!-- Internships & Work -->
+                <div class="exp-column">
+                    <h2 class="column-title"><span class="gradient-text"><i class="fa-solid fa-briefcase"></i> Experience</span></h2>
+                    <div class="exp-list">
+                        <div class="exp-item glass-card">
+                            <span class="exp-tag">Internship</span>
+                            <h3>Web Developer Intern</h3>
+                            <p class="company-name">Dhirati Education</p>
+                            <ul>
+                                <li>Contributed to designing and deploying responsive web features, directly improving accessibility and page load speeds on an educational portal.</li>
+                                <li>Collaborated on bug fixing, code optimization, and performance audits using Chrome DevTools.</li>
+                            </ul>
+                        </div>
+                        <div class="exp-item glass-card">
+                            <span class="exp-tag">Leadership</span>
+                            <h3>Technical Executive</h3>
+                            <p class="company-name">INTERNHUB | IITM Placement Cell</p>
+                            <ul>
+                                <li>Collaborated with the core development team to update, secure, and maintain the college placement cell's portal.</li>
+                                <li>Ensured event coordination and communications between companies and student candidates.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements & Certifications -->
+                <div class="ach-column">
+                    <h2 class="column-title"><span class="gradient-text"><i class="fa-solid fa-trophy"></i> Achievements</span></h2>
+                    <div class="ach-list">
+                        <div class="ach-item glass-card">
+                            <div class="ach-icon"><i class="fa-solid fa-medal"></i></div>
+                            <div>
+                                <h3>Matrix-Hackathon Participant</h3>
+                                <p>Partnered in a technical sprint to conceptualize, design, and code a prototype addressing real-world workflow efficiency under restricted timelines.</p>
+                            </div>
+                        </div>
+                        <div class="ach-item glass-card">
+                            <div class="ach-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <div>
+                                <h3>SIH Internal Hackathon</h3>
+                                <p>Designed and built an Android application prioritizing municipal waste tracking, collection requests, and user rewards, emphasizing optimized UI layouts.</p>
+                            </div>
+                        </div>
+                        <div class="ach-item glass-card">
+                            <div class="ach-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div>
+                                <h3>Certifications & More</h3>
+                                <p>Generative AI Specialization, active participant in online competitive coding rounds and hackathons.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section container">
+            <h2 class="section-title"><span class="gradient-text">Get In Touch</span></h2>
+            <p class="section-subtitle">Let's talk! I'm open to discussing full-time opportunities, projects, or internships.</p>
+            <div class="contact-grid">
+                <!-- Info cards -->
+                <div class="contact-info">
+                    <div class="info-card glass-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email Me</h4>
+                            <a href="mailto:1304priyani@gmail.com">1304priyani@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-card glass-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Call Me</h4>
+                            <a href="tel:+919667780277">+91-9667780277</a>
+                        </div>
+                    </div>
+                    <div class="info-card glass-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>New Delhi, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact form -->
+                <div class="contact-form-wrapper glass-card">
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required placeholder="Internship Opportunity">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Hey Priyani, we loved your portfolio..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                        <div id="form-feedback" class="form-feedback hidden"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Playable Pacman Game Modal -->
+    <div id="game-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal" id="close-game-modal">&times;</span>
+            <h2>Pacman Arcade</h2>
+            <p class="game-instructions">Use arrow keys or swipe to guide Pacman (yellow). Eat all dots & avoid ghosts!</p>
+            <div class="game-dashboard">
+                <div class="score-board">Score: <span id="game-score">0</span></div>
+                <div class="lives-board">Lives: <span id="game-lives">3</span></div>
+            </div>
+            <div class="canvas-container">
+                <canvas id="pacman-canvas" width="400" height="400"></canvas>
+                <div id="game-overlay" class="game-overlay hidden">
+                    <div class="overlay-content">
+                        <h3 id="overlay-title">Game Over</h3>
+                        <button id="restart-game-btn" class="btn btn-primary">Play Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- General Demo Modal -->
+    <div id="demo-modal" class="modal">
+        <div class="modal-content glass-card text-center">
+            <span class="close-modal" id="close-demo-modal">&times;</span>
+            <h2 id="demo-title">Project Live Demo</h2>
+            <p id="demo-desc" class="m-tb-20"></p>
+            <div class="demo-mockup">
+                <!-- Dynamic mock screen content generated by js -->
+                <div id="demo-mock-screen" class="mock-screen"></div>
+            </div>
+            <button class="btn btn-primary" id="close-demo-btn">Close Preview</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <p>&copy; 2026 Priyani Kumari. All rights reserved.</p>
+            <p>Made with <i class="fa-solid fa-heart" style="color: var(--accent-pink);"></i> & Web Standards</p>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
